@@ -46,3 +46,20 @@
 	7.0. Скачать с сайта git kraken и  установить
 	7.1. установить через терминал sudo install git
 	7.2. https://www.youtube.com/watch?v=5nhNfMcczlQ
+8. установка wine на убунту 18.04 ( НЕ ТАК И НУЖНО. ЕСТЬ ПРОЩЕ  PlayOnLinux)
+	8.0. Откываем теминад :D
+	8.1. sudo apt install wine-stable
+	8.2. wine --version чекаем версию
+	8.3. Откройте утилиту Программы и обновления и на вкладке Источники ПО установите галочку напротив пункта Исходный код:
+	8.4. sudo apt build-dep wine-stable сборка проекта
+	8.5. mkdir /opt/wine
+	8.6.cd /opt/wine
+	8.7.sudo wget https://dl.winehq.org/wine/source/4.0/wine-4.0-rc7.tar.xz
+	8.8.sudo tar xf wine*
+	8.9.cd wine-4.0-rc7
+	8.10.sudo ./configure --enable-win64
+	8.11.sudo ./configure --prefix /opt/wine4 --enable-win64 ( если хотим установить в другу папку, в даном случае wine4) 
+	8.13.make -j4 sudo make install sudo apt-get update && sudo apt-get install checkinstall
+	8.14.sudo checkinstall сборка пакеты для установки 
+	8.15.dpkg -i wine.deb установка 
+
