@@ -1,0 +1,44 @@
+0. отключение файла подкачки sudo swapoff -a 
+0.1. разрешение экрана xrandr -q | grep '\*'
+1. изменение переключения яызка. sudo apt-get install gnome-tweak-tool
+2. Установка anaconda.
+	2.0. cd /tmp
+	2.1. curl -O https://repo.anaconda.com/archive/Anaconda3-5.1.0-Linux-x86_64.sh
+	2.2. bash Anaconda3-5.1.0-Linux-x86_64.sh
+	2.3. source ~/.bashrc активация среды.
+	2.4. conda list проверка правильности установки
+	2.5. conda search "^python$" доступные версии
+	2.6. conda create --name my_env python=3 создание виртуального окружения
+	2.7. source activate my_env
+	2.8. source deactivate
+	2.9. conda update -n base conda
+	2.10. conda update --all
+3. утсановка vs code из репозитория.
+	3.1. ext install MS-CEINTL.vscode-language-pack-ru.
+	3.2. дебагер автоматически установиться
+4. darknet.
+	4.0. git clone https://github.com/pjreddie/darknet
+	4.1. cd darknet
+	4.2. make
+		4.2.0. sudo install make
+		4.2.1. sudo apt-get install build-essential
+
+	4.3. wget https://pjreddie.com/media/files/yolov3.weights
+	4.4. cp scripts/get_coco_dataset.sh data
+	4.5. cd data
+	4.6. bash get_coco_dataset.sh
+	4.7. modify cfg/coco.data + path to coco
+	4.8. train model ./darknet detector train cfg/coco.data cfg/yolov3.cfg darknet53.conv.74
+	4.9. ./darknet detector train cfg/coco.data cfg/yolov3.cfg backup/yolov3.backup if u want backups
+5. Compiling With CUDA 
+5.0. GPU=1
+	5.1. nvidia-smi
+	5.2.
+6. создание файла подкачки на флеш накопителе(если требуется)
+	6.0.  lsblk  просмотр всех разделов
+	6.1. # dd if=/URE_DEV of=/swapfile1 bs=1024 count=524288 ТУТ у нас получается файл подкачки на 512 метров
+	6.2. # chown root:root /swapfile1 
+	# chmod 0600 /swapfile1 дать права
+	6.3.# mkswap /swapfile1 объявление файла подкачки 
+	6.4. # swapon /swapfile1 включение файла подкачки
+	6.5. ( если не включился то нужно зайти в диски и включить через интерфейс)
