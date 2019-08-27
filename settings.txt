@@ -19,7 +19,7 @@
 4. darknet.
 	4.0. git clone https://github.com/pjreddie/darknet
 	4.1. cd darknet
-	4.2. make
+	4.2. make sudo apt-get install checkinstall
 		4.2.0. sudo install make
 		4.2.1. sudo apt-get install build-essential
 
