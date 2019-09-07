@@ -3,7 +3,7 @@
 1. изменение переключения яызка. sudo apt-get install gnome-tweak-tool
 2. Установка anaconda.
 	2.0. cd /tmp
-	2.1. curl -O https://repo.anaconda.com/archive/Anaconda3-5.1.0-Linux-x86_64.sh
+	2.1. wget https://repo.anaconda.com/archive/Anaconda3-2019.07-Linux-x86_64.sh
 	2.2. bash Anaconda3-5.1.0-Linux-x86_64.sh
 	2.3. source ~/.bashrc активация среды.
 	2.4. conda list проверка правильности установки
