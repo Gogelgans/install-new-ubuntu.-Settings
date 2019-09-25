@@ -1,5 +1,6 @@
 0. отключение файла подкачки sudo swapoff -a 
 0.1. разрешение экрана xrandr -q | grep '\*'
+0.2. https://losst.ru/kak-ustanovit-tar-gz-v-ubuntu УСТАНОВКА tar gz
 1. изменение переключения яызка. sudo apt-get install gnome-tweak-tool
 2. Установка anaconda.
 	2.0. cd /tmp
