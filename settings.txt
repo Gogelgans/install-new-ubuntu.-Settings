@@ -63,4 +63,17 @@
 	8.13.make -j4 sudo make install sudo apt-get update && sudo apt-get install checkinstall
 	8.14.sudo checkinstall сборка пакеты для установки 
 	8.15.dpkg -i wine.deb установка 
-
+9. Установка polyvision монитор для linux.
+	9.0. sudo apt update
+	9.1. sudo apt upgrade
+	9.2. sudo dpkg --add-architecture i386
+	9.3. sudo apt update
+	9.4. sudo apt install libqt5opengl5:i386
+	9.5. sudo apt install libxrender1:i386
+	9.6. chmod +x VMS.run
+	9.7. sudo su
+	9.8. ./VMS.run
+	9.9. chmod 777 -R /opt/VMS
+	9.10. mv /opt/VMS/libxcb.so.1 /opt/VMS/libxcb.so.1.old
+	9.11. exit
+	9.12. /opt/VMS/VMS.sh Запуск нашей камеры из терминала
