@@ -77,3 +77,4 @@
 	9.10. mv /opt/VMS/libxcb.so.1 /opt/VMS/libxcb.so.1.old
 	9.11. exit
 	9.12. /opt/VMS/VMS.sh Запуск нашей камеры из терминала
+10. Команда на разрешение запуска ярлыков на рабочем столе sudo chown -R ЮЗВЕРЬ:ЮЗВЕРЬ $HOME
