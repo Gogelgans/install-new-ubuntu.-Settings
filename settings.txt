@@ -34,7 +34,7 @@
 5. Compiling With CUDA 
 5.0. GPU=1
 	5.1. nvidia-smi
-	5.2.
+	5.2. https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1804&target_type=deblocal
 6. создание файла подкачки на флеш накопителе(если требуется)
 	6.0.  lsblk  просмотр всех разделов
 	6.1. # dd if=/URE_DEV of=/swapfile1 bs=1024 count=524288 ТУТ у нас получается файл подкачки на 512 метров
