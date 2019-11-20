@@ -78,3 +78,6 @@
 	9.11. exit
 	9.12. /opt/VMS/VMS.sh Запуск нашей камеры из терминала
 10. Команда на разрешение запуска ярлыков на рабочем столе sudo chown -R ЮЗВЕРЬ:ЮЗВЕРЬ $HOME
+11.0 wget -O speedtest-cli  https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py
+11.1 chmod +x speedtest-cli
+11.2 ./speedtest-cli
