@@ -86,3 +86,12 @@
 	12.2 sudo apt-get install apt-transport-https
 	12.3 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 	12.4 sudo apt-get update sudo apt-get install sublime-merge
+13.0 python 3.7 default settings
+	13.1 sudo apt update
+	13.2 sudo apt install software-properties-common
+	13.3 sudo add-apt-repository ppa:deadsnakes/ppa
+	13.4 sudo apt install python3.7
+	13.5 sudo nano nano ~/.bashrc
+	13.6 #add new string alias python3='/usr/bin/python3.7'
+	13.7 source ~/.bashrc
+	13.8 python3 -V
