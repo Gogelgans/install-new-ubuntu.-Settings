@@ -95,3 +95,7 @@
 	13.6 #add new string alias python3='/usr/bin/python3.7'
 	13.7 source ~/.bashrc
 	13.8 python3 -V
+14.0 install miniconda on raspberry pi 
+	14.1 https://github.com/Archiconda/build-tools/releases
+	14.2 chmod +x /path/to/yourscript.sh
+	14.3 ./yourscript.sh
