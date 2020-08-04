@@ -47,7 +47,7 @@
 	7.0. Скачать с сайта git kraken и  установить
 	7.1. установить через терминал sudo install git
 	7.2. https://www.youtube.com/watch?v=5nhNfMcczlQ
-8. установка wine на убунту 18.04 ( НЕ ТАК И НУЖНО. ЕСТЬ ПРОЩЕ  PlayOnLinux)
+8. установка wine на убунту 18.04 ((bad tutorial)Лучше PlayOnLinux)
 	8.0. Откываем теминад :D
 	8.1. sudo apt install wine-stable
 	8.2. wine --version чекаем версию
@@ -86,7 +86,7 @@
 	12.2 sudo apt-get install apt-transport-https
 	12.3 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 	12.4 sudo apt-get update sudo apt-get install sublime-merge
-13.0 python 3.7 default settings
+13.0 python 3.7 default settings (bad tutorial)
 	13.1 sudo apt update
 	13.2 sudo apt install software-properties-common
 	13.3 sudo add-apt-repository ppa:deadsnakes/ppa
@@ -99,3 +99,23 @@
 	14.1 https://github.com/Archiconda/build-tools/releases
 	14.2 chmod +x /path/to/yourscript.sh
 	14.3 ./yourscript.sh
+15.0 overlock rasbperry pi 4b
+	15.1 sudo nano /boot/config.txt
+	15.2 На строке ниже [pi] написать следующее
+		-over_voltage=5arm_freq=1950
+		или
+		-over_voltage=6arm_freq=2147
+		или
+		-over_voltage=2arm_freq=1750
+	15.3 засейвить и сделать reboot
+	15.4 если не запускается - проблемы с вольтажом или не правильные настройки частот (необходимо просто взять, вытащить вашу sd карту, найти в image файле  файл settings.txt и просто переписать там же другие настройки  и запускать)
+16.0 установка python нужной версии из исходного кода
+	16.1 sudo apt update
+	16.2 sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev wget
+	16.3 wget https://www.python.org/ftp/python/3.x.x/Python-3.x.x.tar.xz
+	16.4 tar -xf Python-3.x.x.tar.xz
+	16.5 cd Python-3.x.x./
+	16.6 configure --enable-optimizations
+	16.7 make -j8
+	16.8 sudo make altinstall
+	16.9 python3.x --version
