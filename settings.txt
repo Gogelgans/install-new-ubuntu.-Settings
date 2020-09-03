@@ -119,3 +119,5 @@
 	16.7 make -j8
 	16.8 sudo make altinstall
 	16.9 python3.x --version
+17.0 установка java default:
+	17.1 sudo update-alternatives --config java (and choose u version next (example 8 java))
